@@ -1,0 +1,41 @@
+{
+    "id": "wiql-to-odata-dev",
+    "version": "0.0.172",
+    "publisher": "engoy-dev",
+    "public": false,
+    "name": "Wiql to OData (Dev)",
+    "contributions": [
+        {
+            "id": "work-item-query-menu",
+            "type": "ms.vss-web.action-provider",
+            "description": "Convert a WIQL query to an OData query.",
+            "targets": [
+                "ms.vss-work-web.work-item-query-menu"
+            ],
+            "properties": {
+                "group": "contributed",
+                "uri": "index.html"
+            }
+        },
+        {
+            "id": "work-item-query-results-toolbar-menu",
+            "type": "ms.vss-web.action-provider",
+            "description": "Convert a WIQL query to an OData query.",
+            "targets": [
+                "ms.vss-work-web.work-item-query-results-toolbar-menu"
+            ],
+            "properties": {
+                "group": "contributed",
+                "uri": "index.html"
+            }
+        },
+        {
+            "id": "app-dialog",
+            "type": "ms.vss-web.control",
+            "targets": [],
+            "properties": {
+                "uri": "dialog.html"
+            }
+        }
+    ]
+}

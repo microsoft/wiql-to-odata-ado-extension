@@ -1,0 +1,35 @@
+/**
+ * Copyright (c) Microsoft Corporation.  All rights reserved.
+ */
+
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.query-name-heading {
+    margin-top: 0;
+}
+
+.note-area {
+    margin-top: 10px;
+    max-height: 400px;
+    overflow: auto;
+
+    .note-message-bar {
+        margin-top: 8px;
+    }
+}
+
+.button-area {
+    margin: 8px -4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: stretch;
+
+    >.button {
+        margin: 0 4px;
+        width: 50%;
+    }
+}

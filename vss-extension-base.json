@@ -1,0 +1,59 @@
+{
+    "manifestVersion": 1,
+    "name": "WIQL to OData",
+    "description": "Translates a WIQL query to OData",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services.Cloud"
+        }
+    ],
+    "categories": "Azure Boards",
+    "icons": {
+        "default": "images/favicon.png"
+    },
+    "contributions": [],
+    "files": [
+        {
+            "path": "dist/bundles",
+            "addressable": true,
+            "packagePath": "bundles"
+        },
+        {
+            "path": "dist/index.html",
+            "addressable": true,
+            "packagePath": "index.html"
+        },
+        {
+            "path": "dist/dialog.html",
+            "addressable": true,
+            "packagePath": "dialog.html"
+        },
+        {
+            "path": "images",
+            "addressable": true
+        },
+        {
+            "path": "node_modules/vss-web-extension-sdk/lib",
+            "addressable": true,
+            "packagePath": "lib"
+        }
+    ],
+    "content": {
+        "license": {
+            "path": "LICENSE"
+        },
+        "details": {
+            "path": "README.md"
+        }
+    },
+    "tags": [
+        "Analytics",
+        "Wiql",
+        "Query",
+        "OData"
+    ],
+    "scopes": [
+        "vso.work",
+        "vso.analytics"
+    ]
+}
