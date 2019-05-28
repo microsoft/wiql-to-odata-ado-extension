@@ -13,15 +13,29 @@ export function parseQueryJson(queryJson: string): QueryHierarchyItem {
             newValue = LogicalOperation[value.toLocaleUpperCase()];
         } else {
             switch (value) {
-                case 'flat': newValue = QueryType.Flat; break;
-                case 'oneHop': newValue = QueryType.OneHop; break;
-                case 'tree': newValue = QueryType.Tree; break;
-                case 'linksOneHopMustContain': newValue = LinkQueryMode.LinksOneHopMustContain; break;
-                case 'linksOneHopMayContain': newValue = LinkQueryMode.LinksOneHopMayContain; break;
-                case 'linksOneHopDoesNotContain': newValue = LinkQueryMode.LinksOneHopDoesNotContain; break;
+                case 'flat':
+                    newValue = QueryType.Flat;
+                    break;
+                case 'oneHop':
+                    newValue = QueryType.OneHop;
+                    break;
+                case 'tree':
+                    newValue = QueryType.Tree;
+                    break;
+                case 'linksOneHopMustContain':
+                    newValue = LinkQueryMode.LinksOneHopMustContain;
+                    break;
+                case 'linksOneHopMayContain':
+                    newValue = LinkQueryMode.LinksOneHopMayContain;
+                    break;
+                case 'linksOneHopDoesNotContain':
+                    newValue = LinkQueryMode.LinksOneHopDoesNotContain;
+                    break;
 
                 // We dont really care about any other value, since it's not supported.
-                default: newValue = value; break;
+                default:
+                    newValue = value;
+                    break;
             }
         }
 

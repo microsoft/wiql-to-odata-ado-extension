@@ -3,6 +3,5 @@
     "editor.insertSpaces": true,
     "editor.tabSize": 4,
     "files.insertFinalNewline": true,
-    "files.trimTrailingWhitespace": true,
-    "typescript.tsdk": "./node_modules/typescript/lib",
+    "files.trimTrailingWhitespace": true
 }

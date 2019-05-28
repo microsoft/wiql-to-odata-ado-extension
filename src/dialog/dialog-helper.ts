@@ -41,7 +41,7 @@ export class DialogHelper {
 
         try {
             metadata = await this.getODataMetadata();
-        } catch (e) {
+        } catch (ex) {
             NotesService.instance.newNote('error', axErrorString);
             return null;
         }
@@ -72,8 +72,8 @@ export class DialogHelper {
             }
 
             return allStatements;
-        } catch (e) {
-            NotesService.instance.newNote('error', `An unexpected error occured: ${e.message}`);
+        } catch (ex) {
+            NotesService.instance.newNote('error', `An unexpected error occured: ${ex.message}`);
             return null;
         }
     }
@@ -98,6 +98,11 @@ export class DialogHelper {
                 Authorization: `Bearer ${accessToken.token}`,
             },
         });
+
+        if (response.status < 200 || response.status >= 400) {
+            return Promise.reject();
+        }
+
         const responseText = await response.text();
         const responseObj = parseQueryJson(responseText);
         return responseObj;
@@ -113,8 +118,8 @@ export class DialogHelper {
             },
         });
 
-        if (response.status > 200 || response.status >= 400) {
-            return null;
+        if (response.status < 200 || response.status >= 400) {
+            return Promise.reject();
         }
 
         const responseString = await response.text();

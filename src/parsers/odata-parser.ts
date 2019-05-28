@@ -76,6 +76,7 @@ export class ODataParser {
                 this.makeFilterStatement(this.query.clauses),
                 this.makeOrderByStatement(),
             ].filter((column) => column != null).join('&');
+
             return `https://analytics.dev.azure.com/${this.webContext.account.name}/_odata/v1.0/WorkItems?${statements}`;
         } else if (this.query.queryType === QueryType.OneHop) {
             NotesService.instance.newNote('info', `Non-Flat queries are not recommended by Azure DevOps Analytics. Expect warning VS403508 and possibly long response times.`);
@@ -86,6 +87,7 @@ export class ODataParser {
                 this.makeFilterStatementForOneHop(),
                 this.makeOrderByStatement(),
             ].filter((column) => column != null).join('&');
+
             return `https://analytics.dev.azure.com/${this.webContext.account.name}/_odata/v1.0/WorkItems?${statements}`;
         }
     }
@@ -99,6 +101,7 @@ export class ODataParser {
                 this.makeFilterStatementSimple(this.query.targetClauses, 'l/TargetWorkItem'),
                 this.makeFilterStatementSimple(this.query.linkClauses, 'l'),
             ].filter((column) => column != null).join(' and ');
+
             linksQueryAdditionalClause = additionalFilterStatements.length === 0 ? null :
                 `${this.query.filterOptions === LinkQueryMode.LinksOneHopDoesNotContain ? 'not ' : ''}Links/any(l: ${additionalFilterStatements})`;
         }

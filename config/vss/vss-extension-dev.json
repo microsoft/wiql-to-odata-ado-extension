@@ -1,6 +1,6 @@
 {
     "id": "wiql-to-odata-dev",
-    "version": "0.0.172",
+    "version": "0.0.177",
     "publisher": "engoy-dev",
     "public": false,
     "name": "Wiql to OData (Dev)",
