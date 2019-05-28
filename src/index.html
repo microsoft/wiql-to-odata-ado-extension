@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <script src="./lib/VSS.SDK.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="<%= htmlWebpackPlugin.files.chunks.app.css[0] %>" />
+
+    <script type="text/javascript">
+        // Initialize VSTS.
+        VSS.init({
+            usePlatformScripts: true,
+            usePlatformStyles: true,
+            explicitNotifyLoaded: true,
+        });
+
+        VSS.ready(function () {
+            VSS.require('<%= htmlWebpackPlugin.files.chunks.app.entry %>', function (extension) {
+                // Loading succeeded.
+                VSS.notifyLoadSucceeded();
+            });
+        });
+    </script>
+
+    <div id="content">
+        Loading...
+    </div>
+</body>
+</html>

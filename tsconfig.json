@@ -1,0 +1,33 @@
+// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT License.
+{
+    "compilerOptions": {
+        "baseUrl": "./",
+        "declaration": false,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "lib": [
+            "es2016",
+            "dom"
+        ],
+        "module": "es2015",
+        "moduleResolution": "node",
+        "paths": {
+            "@ms/configuration-environment": [
+                "config/environment/environment.dev"
+            ],
+        },
+        "sourceMap": true,
+        "target": "es5",
+        "types": [
+            "vss-web-extension-sdk"
+        ],
+        "jsx": "react"
+    },
+    "exclude": [
+        "node_modules",
+        "dist",
+        "**/*.spec.ts"
+     ],
+    "compileOnSave": false
+}
