@@ -2,11 +2,11 @@ Wiql to OData translates an Azure DevOps query into an OData query for use with 
 
 ![](images/readme/screenshot.png)
 
-### Features
+## Features
 
 - Convert 'flat list of work items' and 'work items and direct links' ADO queries to OData queries with the click of a button. These queries are url formatted and ready to be used in your apps with any http client.
 
-### Restrictions
+## Restrictions
 
 - You must have [Azure DevOps Analytics](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics) installed to your account.
 - As with the Azure DevOps Analytics extension, *this extension is currently in preview*. It will not support some scenarios that OData or ADO Analytics currently doesn't support. For example...
@@ -23,7 +23,7 @@ email to ensure we received your original message. Further information, includin
 [MSRC PGP](https://technet.microsoft.com/en-us/security/dn606155) key, can be found in
 the [Security TechCenter](https://technet.microsoft.com/en-us/security/default).
 
-# Contributing
+## Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
 Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
