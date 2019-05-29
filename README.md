@@ -1,3 +1,5 @@
+# WIQL to OData Azure DevOps Extension
+
 [![Build Status](https://dev.azure.com/ms/wiql-to-odata-ado-extension/_apis/build/status/microsoft.wiql-to-odata-ado-extension?branchName=master)](https://dev.azure.com/ms/wiql-to-odata-ado-extension/_build/latest?definitionId=146&branchName=master)
 
 Wiql to OData translates an Azure DevOps query into an OData query for use with [Azure DevOps Analytics](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics) [OData endpoints](https://docs.microsoft.com/en-us/azure/devops/report/extend-analytics/?view=vsts).
@@ -15,6 +17,19 @@ Wiql to OData translates an Azure DevOps query into an OData query for use with 
     - Recursive (tree) Wiql queries are not supported.
     - Macros (such as `@project`, `@me`), are not supported. When possible, these values will be replaced with static values. `@today` is supported, but mathematical operations on `@today` such as `@today - 1` are not supported, and will be replaced with a static value.
 - The output query is a best guess, and may require some adjustment to perform exactly as required. Please heed the warnings listed below the query text.
+
+## Building the project
+
+Just run:
+
+    npm run build:dev
+    npm run package:dev
+
+This produces a .vsix file which can be uploaded to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops)
+
+You can also publish it to your own publisher by running:
+
+    npm run publish:dev
 
 ## Reporting Security Issues
 

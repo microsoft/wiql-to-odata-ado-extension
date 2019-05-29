@@ -38,6 +38,21 @@
             "packagePath": "lib"
         }
     ],
+    "links": {
+        "repository": {
+            "uri": "https://github.com/microsoft/wiql-to-odata-ado-extension"
+        },
+        "issues": {
+            "uri": "https://github.com/microsoft/wiql-to-odata-ado-extension/issues"
+        },
+        "support": {
+            "uri": "https://github.com/microsoft/wiql-to-odata-ado-extension/issues"
+        }
+    },
+    "repository": {
+        "type": "git",
+        "uri": "https://github.com/microsoft/wiql-to-odata-ado-extension"
+    },
     "content": {
         "license": {
             "path": "LICENSE"
