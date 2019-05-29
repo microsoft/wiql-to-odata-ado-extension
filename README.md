@@ -1,3 +1,5 @@
+[![Build Status](https://dev.azure.com/ms/wiql-to-odata-ado-extension/_apis/build/status/microsoft.wiql-to-odata-ado-extension?branchName=master)](https://dev.azure.com/ms/wiql-to-odata-ado-extension/_build/latest?definitionId=146&branchName=master)
+
 Wiql to OData translates an Azure DevOps query into an OData query for use with [Azure DevOps Analytics](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics) [OData endpoints](https://docs.microsoft.com/en-us/azure/devops/report/extend-analytics/?view=vsts).
 
 ![](images/readme/screenshot.png)
