@@ -30,7 +30,7 @@
     "karma-mocha-reporter": "^2.2.3",
     "karma-webpack": "^2.0.4",
     "mini-css-extract-plugin": "^0.4.4",
-    "node-sass": "^4.10.0",
+    "node-sass": "^7.0.0",
     "rimraf": "^2.6.1",
     "sass-loader": "^7.0.0",
     "source-map-loader": "^0.2.1",
