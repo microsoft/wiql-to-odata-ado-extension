@@ -47,7 +47,7 @@
   },
   "dependencies": {
     "core-js": "^2.5.7",
-    "moment": "2.18.1",
+    "moment": "2.29.4",
     "office-ui-fabric-react": "^6.101.0",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
